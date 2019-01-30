@@ -2,11 +2,11 @@
 
 All of the information below is **only my personal opinion** that exist for quick access restore knowledge's about Grid Layout. 
 
-##GRID LAYOUT
-####Grid container properties
+## GRID LAYOUT
+#### Grid container properties
 `display: grid` - initialize Grid Layout in this particular element;
 
-######grid-template-columns 
+###### grid-template-columns 
 Responsible for columns. All grid items will be located according this template
 
 *Example:*
@@ -15,11 +15,11 @@ Responsible for columns. All grid items will be located according this template
 
 `grid-template-columns: repeat(6, 1fr)` - means that it will be **6 columns**, each of them **1fr width**
 
-######grid-template-rows
+###### grid-template-rows
 Responsible for rows. All grid items will be located according this template.
 **All syntax is just like in `grid-template-columns`**
 
-######grid-template-areas
+###### grid-template-areas
 You can create column and row templates, then add a named area to each item. 
 
 ```css
@@ -46,7 +46,7 @@ You can create column and row templates, then add a named area to each item.
   grid-area: footer;
 }
 ```
-######grid-template
+###### grid-template
 This is cinda shorthand for `grid-areas` + `grid-template-columns` + `grid-teplate-rows` properties.
 
 *Example for same grid items as above*
@@ -63,14 +63,14 @@ This is cinda shorthand for `grid-areas` + `grid-template-columns` + `grid-tepla
 
 ```
 
-######grid-gap, grid-column-gap, grid-row-gap
+###### grid-gap, grid-column-gap, grid-row-gap
 `grid-column-gap` - response for space between each column
 
 `grid-row-gap` - response for space between each row
 
 `grid-gap` - is a shorthand for this two properties and its value will applied to both of them
 
-######justify-items
+###### justify-items
 `justify-items: start | end | center | stretch` - align grid items along row axis (horizontally) in each grid cell
 
 `stretch` - fills the whole width of the cell.
@@ -82,7 +82,7 @@ This is cinda shorthand for `grid-areas` + `grid-template-columns` + `grid-tepla
 }
 ```
 
-######align-items
+###### align-items
 Doing same job as `justify items`, but in opposite axis - **vertically**.
 
 *Example*
@@ -99,14 +99,14 @@ Doing same job as `justify items`, but in opposite axis - **vertically**.
 `justify-content: start | end | center | stretch | space-around | space-between | space-evenly;`
 response for **placement of grid cells** relative to grid container **horisontally**
 
-######align-content
+###### align-content
 `align-content: start | end | center | stretch | space-around | space-between | space-evenly;`
 response for **placement of grid cells** relative to grid container **vertically**
 
-######place-content
+###### place-content
 `place-content` sets both the `align-content` and `justify-content` properties in a single declaration.
 
-######grid-auto-columns, grid-auto-rows, grid-auto-flow
+###### grid-auto-columns, grid-auto-rows, grid-auto-flow
 `grid-auto-columns: <length> | <percentage> | fr | max-content | min-content | minmax(min, max) | fit-content(value) | auto | <multiple track-size values>` - response for width of implicit grid. **Implicit grid** - grid for elements who didn't fit in define template. [Click to read more. This article has perfect description (RUS)](https://abraxabra.ru/blog/css/css-grid-a-detailed-guide-with-examples-gridam/)
 
 Same thing with `grid-auto-rows` property but it works in **vertical** direction.
@@ -142,7 +142,7 @@ Same thing with `grid-auto-rows` property but it works in **vertical** direction
 
 `grid-auto-flow: row | column | row dense | column dense` - cinda `flex-direction`... response how the grid will be filled with items. Keyword `dense` - means fill free grid space with grid items --> it can cause an issues with order of elements
 
-######grid
+###### grid
 
 A shorthand for setting all of the following properties in a single declaration: grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow
 
