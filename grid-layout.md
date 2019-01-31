@@ -169,3 +169,77 @@ A shorthand for setting all of the following properties in a single declaration:
 }
 ```
 
+#### Grid item properties
+
+###### grid-column-start, grid-column-end, grid-row-start, grid-row-end
+`grid-column-start` and `grid-column-end : <number> | span <number> | span <name> | auto` - marks start and end points of grid item **horisontally**
+
+`grid-column-start` and `grid-column-end : <number> | span <number> | span <name> | auto` - same thing but **vertically**
+
+`span <number>` - means that element will place `number` columns/rows;
+`span <number>` - means that the item will span across until it hits the next line with the provided name;
+
+*Example:*
+```css
+.item {
+  grid-column-start: 1;
+  grid-column-end: span col4-start;
+  grid-row-start: 2
+  grid-row-end: span 2
+}
+```
+
+###### grid-column, grid-row, grid-area
+`grid-column` and `grid-row` - a shorthand for `grid-column-start` `grid-column-end` `grid-row-start` `grid-row-end` properties
+
+*Example:*
+```css
+.item {
+  grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+  grid-row: <start-line> / <end-line> | <start-line> / span <value>;
+}
+
+.grid-item {
+  grid-column: 3 / span 2;
+  grid-row: third-line / 4;
+}
+
+```
+
+`grid-area` - shorthand for `grid-column` and `grid-row` properties
+
+*Example:*
+```css
+.item {
+  grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+}
+
+.item-d {
+  grid-area: header /*this is the name of area, that grid-template will have inside*/
+}
+
+.grid-item {
+    grid-area: 1 / col4-start / last-line / 6
+}
+```
+
+
+###### justify-self
+`justify-self: start | end | center | stretch;` - aligns a grid item **inside a cell** along the row axis (**horisontally**)
+
+###### align-self
+`align-self: start | end | center | stretch;` - aligns a grid item **inside a cell** along the column axis (**vertically**)
+
+###### place-self
+`place-self: auto | <align-self> / <justify-self>` - set both of self placement properties
+
+*Example:*
+```css
+.item-a {
+    place-self: center stretch;
+}
+
+.item-b {
+    place-self: center; 
+}
+```
