@@ -1,4 +1,4 @@
-##READ THIS TEXT FIRST
+## READ THIS TEXT FIRST
 
 All of the information below is **only my personal opinion** that exist for quick access restore knowledge's about Grid Layout. 
 
