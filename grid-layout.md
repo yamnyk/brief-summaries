@@ -92,10 +92,10 @@ Doing same job as `justify items`, but in opposite axis - **vertically**.
 }
 ```
 
-######place-items
+###### place-items
 `place-items` sets both the `align-items` and `justify-items` properties in a single declaration.
 
-######justify-content
+###### justify-content
 `justify-content: start | end | center | stretch | space-around | space-between | space-evenly;`
 response for **placement of grid cells** relative to grid container **horisontally**
 
