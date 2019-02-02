@@ -3,7 +3,7 @@
 There are 6 data types in JS, first 5 of themare - *PRIMITIVES*:
  * [Number](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/data-types.md#number)
  * [String](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/data-types.md#string)
- * [boolean](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/data-types.md#boolean)
+ * [boolean](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/data-types.md#boolean---logical-data-type)
  * [null](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/data-types.md#null---special-value) - special value
  * [undefined](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/data-types.md#undefined---special-value) - special value
  
