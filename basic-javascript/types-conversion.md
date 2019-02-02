@@ -1,8 +1,8 @@
 ## Primitive types conversion
 There are 3 primitive types conversions in JS:
- * [String conversion]()
- * [Number conversion]()
- * [Logical conversion]()
+ * [String conversion](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/types-conversion.md#string-conversion)
+ * [Number conversion](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/types-conversion.md#number-conversion)
+ * [Logical conversion](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/types-conversion.md#logical-conversion)
 
 ### String conversion
 `String(value)` - will convert `value` into String type
