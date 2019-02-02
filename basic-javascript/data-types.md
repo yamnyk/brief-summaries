@@ -1,4 +1,4 @@
-## Data types in JavaScript
+## Data types in JavaScript, operator `typeof`
 
 There are 6 data types in JS, first 5 of themare - *PRIMITIVES*:
  * [Number](https://github.com/yamnyk/brief-summaries/blob/master/basic-javascript/data-types.md#number)
@@ -75,6 +75,40 @@ var gogi; //value of gogi is undefined
 ```
 
 ### `Object`
+Complex data type, created for collecting or more complex essences declaration.
 
+*Object declaration:*
+```javascript
+var myObject = {} //will creates an empty object with no properties inside
+
+let user = {
+    name: 'Gogi'
+} // will create on Object with property 'name' and value 'Gogi'
+```
 
 ### `typeof` operator
+Returns data type of argument.
+
+Has two types of syntax:
+```javascript
+typeof argument;
+typeof(argument);
+```
+
+Both of them works well, but first of them is shorter.
+
+```javascript
+typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof {} // "object"
+
+typeof null // "object"  and this is official exception of JavaScript.
+
+typeof function(){} // "function"  this is not a separate data type, functions are subtype od Objects, but typeof allocates functions separately 
+```
