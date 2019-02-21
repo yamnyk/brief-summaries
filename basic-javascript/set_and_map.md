@@ -69,3 +69,27 @@ for(let entry of shoppingMap) { //same that recipeMap.entries()
 
 # SET
 
+**Collection with unique values**
+
+```javascript
+let set = new Set();
+
+set.add('value-1');
+set.add('value-1');
+
+set.add('value-2');
+set.add('value-2');
+set.add('value-2');
+
+set.add('value-3');
+
+//set gonna contain only 3 values - value-1, value-2, value-3
+```
+
+#### Delete, clear, has methods
+
+`set.delete(item)` - will delete the item and returns new Set. So you can chain this method.
+
+`set.clear()` - clear all items
+
+`set.has(item)` - returns `true` if there is an item in set, returns `false` - if there is no such item in set.
